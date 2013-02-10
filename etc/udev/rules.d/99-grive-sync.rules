@@ -1,0 +1,2 @@
+KERNEL=="eth*", RUN+="/usr/local/grive-sync/udev_program.sh" 
+KERNEL=="wlan*", RUN+="/usr/local/grive-sync/udev_program.sh" 
