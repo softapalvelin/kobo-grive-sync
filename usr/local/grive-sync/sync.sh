@@ -4,6 +4,9 @@
 BASEDIR=$(dirname $0)
 . $BASEDIR/config.sh
 
+# some line might rely that settings directory exists
+mkdir -p $grive_sync_settings
+
 # ensure that application is installed
 $grive_sync_home/install_app.sh
 
