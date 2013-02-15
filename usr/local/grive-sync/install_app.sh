@@ -3,13 +3,15 @@ target=/etc/init.d/rcS
 payload=$grive_sync_home/rcS_payload.txt
 
 grep -q -F -f $payload $target
-if [ $? = 0 ]; then
-      exit 0;
+if [ $? != 0 ]; then
+      cat $payload >> $target
 fi
  
-cat $payload >> $target
+target=/usr/local/Kobo/udev/usb
+payload=$grive_sync_home/usb_payload.txt
 
 grep -q -F -f $payload $target
 if [ $? != 0 ]; then
-      exit 1;
+      cat $payload >> $target
 fi
+ 
