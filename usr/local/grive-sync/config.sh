@@ -6,6 +6,6 @@
 
 grive_sync_settings=/mnt/onboard/.grive-sync
 grive_sync_home=/usr/local/grive-sync
-grive_sync_libfolder=/mnt/sd
+grive_sync_libfolder=/mnt/onboard/.grive-sync/sd
 
 export grive_sync_settings grive_sync_home grive_sync_libfolder
